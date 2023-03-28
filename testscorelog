@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("testscore: ");
+        char grade = 0;
+        byte testscore = scanner.nextByte();
+//        char grade = scanner.nextStr()
+        System.out.println("What is your:" + testscore);
+        System.out.println("Your grade:" + grade);
+        
+
+        if (testscore >= 80) {
+            grade = 'A';
+        } else if (testscore >= 70){
+            grade = 'B';
+        } else if (testscore >= 60) {
+            grade = 'C';
+        } else if (testscore >= 50) {
+            grade = 'D';
+        } else {
+            grade = 'E';
+        }
+
+        System.out.println("Grade = " + grade);
+    }
+}
